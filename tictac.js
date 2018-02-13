@@ -55,7 +55,7 @@ function gameOver(gameWon) {
 	for (let i = 0; i < cells.length; i++) {
 		cells[i].removeEventListener('click', turnClick, false)
 	}
-	declareWinner(gameWon.player == huPlayer ? "You win!" : "You lose!")
+	declareWinner(gameWon.player == huPlayer ? "Ты выиграл!" : "Ты проиграл.)
 }
 function declareWinner(who) {
 	document.querySelector(".endgame").style.display = "block";
@@ -73,7 +73,7 @@ function checkTie() {
 			cells[i].style.backgroundColor = "green";
 			cells[i].removeEventListener('click', turnClick, false);
 		}
-		declareWinner("Tie Game!");
+		declareWinner("Ничья.");
 		return true;
 	}
 	return false;
