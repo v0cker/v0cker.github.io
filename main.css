@@ -1,4 +1,17 @@
+.version {
+	text-align: center;
 
+}
+h1 {
+	font-family: Tahoma;
+}
+p {
+	font-weight: cursive;
+}
+span {
+	text-decoration: underline;
+	font-weight: bolder;
+}
 td {
 	border: 2px solid #ff349b;
 	height: 100px;
