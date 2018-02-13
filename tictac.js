@@ -55,7 +55,7 @@ function gameOver(gameWon) {
 	for (let i = 0; i < cells.length; i++) {
 		cells[i].removeEventListener('click', turnClick, false)
 	}
-	declareWinner(gameWon.player == huPlayer ? "Ты выиграл!" : "Ты проиграл.)
+	declareWinner(gameWon.player == huPlayer ? "Ты выиграл!" : "Ты проиграл.);
 }
 function declareWinner(who) {
 	document.querySelector(".endgame").style.display = "block";
