@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600');
 .version {
+	margin: 0 auto;
+	display: black;
 	text-align: center;
+	margin-bottom: 25px;
+}
+h5 {
+	display: inline-block;
+	float: right;
 }
 body {
-	background-color: #e4e3d3;
+	background-color: #40464b;
 	font-family: 'Josefin Sans', sans-serif;
-	background-image: url(bg.png);
+	color:#f2f2f2;
+	background-image: url(cat2.png);
+	background-repeat: no-repeat;
+	background-position: right;
 }
 h1 {
 	font-family: Tahoma;
@@ -99,5 +109,11 @@ button {
 	margin-top: 150px;
 }
 form {
-	display: inline-block;
+	margin-top: 30px;
+	display: block;
+}
+input {
+	cursor: pointer;
+	color: red;
+	outline: none;
 }

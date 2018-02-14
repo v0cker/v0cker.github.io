@@ -95,6 +95,7 @@ function checkTie() {
 			cells[i].removeEventListener('click', turnClick, false);
 		}
 		declareWinner("Ничья!")
+		document.querySelector("form").style.display = "block";
 		return true;
 	}
 	return false;
