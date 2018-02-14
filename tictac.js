@@ -1,6 +1,6 @@
 var origBoard;
-const huPlayer = 'O';
-const aiPlayer = 'X';
+var huPlayer;
+var aiPlayer;
 const winCombos = [
 	[0, 1, 2],
 	[3, 4, 5],
@@ -13,9 +13,20 @@ const winCombos = [
 ]
 
 const cells = document.querySelectorAll('.cell');
-startGame();
-
+        function btnClick()
+        {
+        	if(document.Test1.side[0].checked) {
+        		huPlayer = 'x';
+        		aiPlayer = 'o';
+        	}
+        	else {
+        		huPlayer = 'o';
+        		aiPlayer = 'x';
+        	}
+            
+        }
 function startGame() {
+	document.querySelector("form").style.display = "none";
 	document.querySelector(".endgame").style.display = "none";
 	origBoard = Array.from(Array(9).keys());
 	for (var i = 0; i < cells.length; i++) {
@@ -53,6 +64,7 @@ function checkWin(board, player) {
 }
 
 function gameOver(gameWon) {
+	document.querySelector("form").style.display = "block";
 	for (let index of winCombos[gameWon.index]) {
 		document.getElementById(index).style.backgroundColor =
 			gameWon.player == huPlayer ? "blue" : "red";

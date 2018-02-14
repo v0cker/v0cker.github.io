@@ -7,11 +7,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
-	<h1 class="version">alpha 2.0</h1>
-	<p class="version">Я сделаль новую кнопочку</p>
+	<h1 class="version">beta 1.0<span>!!!</span></h1>
+	<p class="version">можно менять стороны конфликта</p>
 	<hr>
 	<h5 class="version">Спасибо Азамату и Диме за помощь в альфа-тестирование!</h6>
 <center>
+<form name="Test1">
+    <input type="radio"  name="side" value ="x" checked>Крестик
+    <input type="radio"  name="side" value ="o">Нолик
+</form>
 <table>
 	<tr>
 		<td class="cell" id="0"></td>
@@ -34,7 +38,7 @@
 			
 		</div>
 	</div>
-<button class="ripple" onClick="startGame()">Новая игра</button>
+<button class="ripple" onClick="startGame(), btnClick()">Новая игра</button>
 </center>
 <script src="tictac.js"></script>
 </body>

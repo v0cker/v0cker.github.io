@@ -29,7 +29,7 @@ td {
 table {
 	border-collapse: collapse;
 	position: relative;
-	margin-bottom: 20px;
+	margin: 20px 0;
 }
 table tr:first-child td {
 	border-top: 0;
@@ -95,4 +95,8 @@ button {
 	border-radius: 5px;
 	color: white;
 	font-size: 2em;
+	margin-top: 150px;
+}
+form {
+	display: inline-block;
 }
