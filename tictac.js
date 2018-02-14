@@ -72,7 +72,7 @@ function gameOver(gameWon) {
 	for (var i = 0; i < cells.length; i++) {
 		cells[i].removeEventListener('click', turnClick, false);
 	}
-	declareWinner(gameWon.player == huPlayer ? "Ты выиграл!" : "Ты проиграл.");
+	declareWinner(gameWon.player == huPlayer ? "Ты выиграл!" : "Ты проиграл.Мда.");
 }
 
 function declareWinner(who) {
